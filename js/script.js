@@ -1,13 +1,13 @@
 function init(){
-		
-		var entryButton = document.getElementById('entrybutton');
-		var entryinput = document.getElementById('entryinput');
-    
-		entryButton.addEventListener('click', function() {
-		text = input.value;
-    alert('Tatiana Menshakova:');
-  });
-}
+	var button = document.getElementById('entrybutton');
 
-
+	function showMeText(){
+		var textbox = document.getElementById('entryinput');
+		document.getElementById('textoutput').innerHTML = textbox.value;
+    alert('Tatiana Menshakova: ' + textbox.value);
+		textOutput.textContent = message;
+  }
+	
+	button.addEventListener('click', showMeText);
+	}
 window.addEventListener('load', init);
